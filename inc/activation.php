@@ -10,6 +10,8 @@ namespace kebbet\taxonomy\arttype\activation;
 
 /**
  * Register taxonomy and flush rewrite rules on registration.
+ *
+ * @since 1.1.0
  */
 function activate() {
 	// First, we "add" the custom taxonomy via the above written function.

@@ -3,7 +3,7 @@
  * Plugin Name:       Kebbet plugins - custom taxonomy: arttype
  * Plugin URI:        https://github.com/kebbet/kebbet-taxonomy-arttype
  * Description:       Registers the custom taxonomy arttype
- * Version:           1.0
+ * Version:           1.1.0
  * Author:            Erik Betshammar
  * Author URI:        https://verkan.se
  * Requires at least: 5.8
@@ -45,6 +45,8 @@ register_deactivation_hook( __FILE__, __NAMESPACE__ . '\deactivation' );
 require_once plugin_dir_path( __FILE__ ) . 'inc/register.php';
 /**
  * Hook into the 'init' action
+ *
+ * @since 1.0.0
  */
 function init() {
 	\kebbet\taxonomy\arttype\register\load_textdomain();

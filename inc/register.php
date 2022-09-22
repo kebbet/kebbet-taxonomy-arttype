@@ -11,9 +11,10 @@ namespace kebbet\taxonomy\arttype\register;
 use const kebbet\taxonomy\arttype\TAXONOMY;
 use const kebbet\taxonomy\arttype\POST_TYPES;
 
-
 /**
  * Load plugin textdomain.
+ *
+ * @since 1.0.0
  */
 function load_textdomain() {
 	load_plugin_textdomain( 'kebbet-taxonomy-arttype', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
@@ -21,6 +22,8 @@ function load_textdomain() {
 
 /**
  * Register the taxonomy
+ *
+ * @since 1.0.0
  */
 function register() {
 

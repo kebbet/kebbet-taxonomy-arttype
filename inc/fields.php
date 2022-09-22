@@ -11,11 +11,17 @@ namespace kebbet\taxonomy\arttype\fields;
 use const kebbet\taxonomy\arttype\TAXONOMY;
 use const kebbet\taxonomy\arttype\HIDE_DESC;
 
+/**
+ * Hide form fields with CSS, based on plugin constants.
+ *
+ * @since 1.0.0
+ *
+ * @return string|null Print style tag or return nothing.
+ */
 function hide_form_fields() {
-	$screen = get_current_screen();
 	$style  = '';
 
-	if ( 'edit-' . TAXONOMY !== $screen->id ) {
+	if ( 'edit-' . TAXONOMY !== get_current_screen()->id ) {
 		return;
 	}
 

@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Kebbet plugins - custom taxonomy: arttype
  * Plugin URI:        https://github.com/kebbet/kebbet-taxonomy-arttype
- * Description:       Register the custom taxonomy arttype
+ * Description:       Registers the custom taxonomy arttype
  * Version:           1.0
  * Author:            Erik Betshammar
  * Author URI:        https://verkan.se
@@ -17,7 +17,7 @@
 namespace kebbet\taxonomy\arttype;
 
 const TAXONOMY   = 'arttype';
-const POST_TYPES = array( 'art' );
+const POST_TYPES = array( 'art', 'project' );
 const HIDE_SLUG  = false;
 
 /**
@@ -67,7 +67,7 @@ function register() {
 		'separate_items_with_commas' => __( 'Separate art type tags with commas', 'kebbet-taxonomy-arttype' ),
 		'search_items'               => __( 'Search tags', 'kebbet-taxonomy-arttype' ),
 		'add_or_remove_items'        => __( 'Add or remove tags', 'kebbet-taxonomy-arttype' ),
-		'choose_from_most_used'      => __( 'Choose from the most used  tags', 'kebbet-taxonomy-arttype' ),
+		'choose_from_most_used'      => __( 'Choose from the most used tags', 'kebbet-taxonomy-arttype' ),
 		'not_found'                  => __( 'No tags found.', 'kebbet-taxonomy-arttype' ),
 		'popular_items'              => __( 'Popular tags', 'kebbet-taxonomy-arttype' ),
 		'parent_item'                => __( 'Parent tag', 'kebbet-taxonomy-arttype' ),

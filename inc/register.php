@@ -17,7 +17,7 @@ use const kebbet\taxonomy\arttype\POST_TYPES;
  * @since 1.0.0
  */
 function load_textdomain() {
-	load_plugin_textdomain( 'kebbet-taxonomy-arttype', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+	load_plugin_textdomain( 'kebbet-taxonomy-arttype', false, dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages' );
 }
 
 /**
@@ -26,7 +26,6 @@ function load_textdomain() {
  * @since 1.0.0
  */
 function register() {
-
 	$tax_labels = array(
 		'name'                       => _x( 'Art type', 'taxonomy general name', 'kebbet-taxonomy-arttype' ),
 		'menu_name'                  => __( 'Art type', 'kebbet-taxonomy-arttype' ),

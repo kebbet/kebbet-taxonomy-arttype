@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kebbet plugins - custom taxonomy: arttype\n"
-"POT-Creation-Date: 2022-09-22 09:20+0200\n"
-"PO-Revision-Date: 2022-09-22 09:21+0200\n"
+"POT-Creation-Date: 2022-09-22 10:27+0200\n"
+"PO-Revision-Date: 2022-09-22 10:27+0200\n"
 "Last-Translator: Erik Betshammar <info@verkan.se>\n"
 "Language-Team: Erik Betshammar <info@verkan.se>\n"
 "Language: sv_SE\n"
@@ -21,85 +21,85 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: kebbet-taxonomy-arttype.php:58
+#: inc/register.php:31
 msgctxt "taxonomy general name"
 msgid "Art type"
 msgstr "Konsttyp"
 
-#: kebbet-taxonomy-arttype.php:59
+#: inc/register.php:32
 msgid "Art type"
 msgstr "Konsttyp"
 
-#: kebbet-taxonomy-arttype.php:60
+#: inc/register.php:33
 msgctxt "taxonomy singular name"
 msgid "Art type"
 msgstr "Konsttyp"
 
-#: kebbet-taxonomy-arttype.php:61
+#: inc/register.php:34
 msgid "All art type tags"
 msgstr "Alla konsttyps-etiketter"
 
-#: kebbet-taxonomy-arttype.php:62
+#: inc/register.php:35
 msgid "Edit tag"
 msgstr "Redigera etikett"
 
-#: kebbet-taxonomy-arttype.php:63
+#: inc/register.php:36
 msgid "View tag"
 msgstr "Visa etikett"
 
-#: kebbet-taxonomy-arttype.php:64
+#: inc/register.php:37
 msgid "Update tag"
 msgstr "Uppdatera etikett"
 
-#: kebbet-taxonomy-arttype.php:65
+#: inc/register.php:38
 msgid "Add new tag"
 msgstr "Lägg till ny etikett"
 
-#: kebbet-taxonomy-arttype.php:66
+#: inc/register.php:39
 msgid "New tag name"
 msgstr "Nytt etikettnamn"
 
-#: kebbet-taxonomy-arttype.php:67
+#: inc/register.php:40
 msgid "Separate art type tags with commas"
 msgstr "Separata konsttyps-etiketter med kommatecken"
 
-#: kebbet-taxonomy-arttype.php:68
+#: inc/register.php:41
 msgid "Search tags"
 msgstr "Sök etiketter"
 
-#: kebbet-taxonomy-arttype.php:69
+#: inc/register.php:42
 msgid "Add or remove tags"
 msgstr "Lägg till eller ta bort etiketter"
 
-#: kebbet-taxonomy-arttype.php:70
+#: inc/register.php:43
 msgid "Choose from the most used tags"
 msgstr "Välj bland de vanligaste etiketterna"
 
-#: kebbet-taxonomy-arttype.php:71
+#: inc/register.php:44
 msgid "No tags found."
 msgstr "Inga etiketter hittades."
 
-#: kebbet-taxonomy-arttype.php:72
+#: inc/register.php:45
 msgid "Popular tags"
 msgstr "Populära etiketter"
 
-#: kebbet-taxonomy-arttype.php:73
+#: inc/register.php:46
 msgid "Parent tag"
 msgstr "Överordnad etikett"
 
-#: kebbet-taxonomy-arttype.php:74
+#: inc/register.php:47
 msgid "Parent tag:"
 msgstr "Överordnad etikett:"
 
-#: kebbet-taxonomy-arttype.php:75
+#: inc/register.php:48
 msgid "&larr; Back to tags"
 msgstr "← Tillbaka till etiketter"
 
-#: kebbet-taxonomy-arttype.php:76
+#: inc/register.php:49
 msgid "The name is how it appears in the user interface."
 msgstr "Namnet är hur det visas i användargränssnittet."
 
-#: kebbet-taxonomy-arttype.php:77
+#: inc/register.php:50
 msgid ""
 "The &#8220;slug&#8221; is a sanitized version of the name. It is usually all "
 "lowercase and contains only letters, numbers, and hyphens. Do not change if "
@@ -109,11 +109,11 @@ msgstr ""
 "gemener och innehåller bara bokstäver, siffror och bindestreck. Ändra inte "
 "om det inte behövs."
 
-#: kebbet-taxonomy-arttype.php:78
+#: inc/register.php:51
 msgid "The description is not used."
 msgstr "Beskrivningen används inte."
 
-#: kebbet-taxonomy-arttype.php:100
+#: inc/register.php:73
 msgid "Metadata tag for sorting and grouping posts."
 msgstr "Metadatatagg för sortering och gruppering av inlägg."
 

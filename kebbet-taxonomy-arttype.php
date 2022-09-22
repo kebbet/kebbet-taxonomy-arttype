@@ -19,6 +19,7 @@ namespace kebbet\taxonomy\arttype;
 const TAXONOMY   = 'arttype';
 const POST_TYPES = array( 'art', 'project' );
 const HIDE_SLUG  = false;
+const HIDE_DESC  = true;
 
 /**
  * Hook into the 'init' action
@@ -104,18 +105,11 @@ function register() {
 }
 
 /**
- * Remove the 'slug' column from the table in 'edit-tags.php'
+ * Modifies the admin columns, for the taxonomy.
  */
-function remove_column_slug( $columns ) {
-    if ( isset( $columns['slug'] ) )
-        unset( $columns['slug'] );   
-
-    return $columns;
-}
+require_once plugin_dir_path( __FILE__ ) . 'inc/admin-columns.php';
 
 /**
- * Run filter only if constant says so.
+ * Modifies fields in the form, for the taxonomy.
  */
-if ( true === HIDE_SLUG ) {
-	add_filter( 'manage_edit-' . TAXONOMY . '_columns', __NAMESPACE__ . '\remove_column_slug' );
-}
+require_once plugin_dir_path( __FILE__ ) . 'inc/fields.php';

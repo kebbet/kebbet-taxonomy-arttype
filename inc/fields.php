@@ -21,6 +21,10 @@ use const kebbet\taxonomy\arttype\HIDE_DESC;
 function hide_form_fields() {
 	$style  = '';
 
+	if ( ! is_admin() ) {
+		return;
+	}
+
 	if ( 'edit-' . TAXONOMY !== get_current_screen()->id ) {
 		return;
 	}

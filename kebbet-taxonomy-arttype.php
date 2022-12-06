@@ -3,7 +3,7 @@
  * Plugin Name:       Kebbet plugins - custom taxonomy: arttype
  * Plugin URI:        https://github.com/kebbet/kebbet-taxonomy-arttype
  * Description:       Registers the custom taxonomy arttype
- * Version:           1.1.0
+ * Version:           1.2.0
  * Author:            Erik Betshammar
  * Author URI:        https://verkan.se
  * Requires at least: 5.8
@@ -63,3 +63,10 @@ require_once plugin_dir_path( __FILE__ ) . 'inc/admin-columns.php';
  * Modifies fields in the form, for the taxonomy.
  */
 require_once plugin_dir_path( __FILE__ ) . 'inc/fields.php';
+
+/**
+ * Adds possibility to sort terms
+ *
+ * @since 1.2.0
+ */
+require_once plugin_dir_path( __FILE__ ) . 'inc/sorting.php';

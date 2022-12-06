@@ -5,6 +5,10 @@ Adds a custom taxonomy to selected post types.
 Activate plugin and use with normal taxonomy ui.
 
 ## Changelog
+### 1.2.0
+- Adds sorting value feature.
+
+## Changelog
 ### 1.1.0
 - Adds activation and deactivation functions.
 

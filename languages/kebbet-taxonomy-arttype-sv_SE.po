@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Kebbet plugins - custom taxonomy: arttype\n"
-"POT-Creation-Date: 2022-09-22 10:27+0200\n"
-"PO-Revision-Date: 2022-09-22 10:27+0200\n"
+"POT-Creation-Date: 2022-12-06 07:54+0100\n"
+"PO-Revision-Date: 2022-12-06 07:54+0100\n"
 "Last-Translator: Erik Betshammar <info@verkan.se>\n"
 "Language-Team: Erik Betshammar <info@verkan.se>\n"
 "Language: sv_SE\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: kebbet-taxonomy-arttype.php\n"
@@ -21,85 +21,85 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: inc/register.php:31
+#: inc/register.php:30
 msgctxt "taxonomy general name"
 msgid "Art type"
 msgstr "Konsttyp"
 
-#: inc/register.php:32
+#: inc/register.php:31
 msgid "Art type"
 msgstr "Konsttyp"
 
-#: inc/register.php:33
+#: inc/register.php:32
 msgctxt "taxonomy singular name"
 msgid "Art type"
 msgstr "Konsttyp"
 
-#: inc/register.php:34
+#: inc/register.php:33
 msgid "All art type tags"
 msgstr "Alla konsttyps-etiketter"
 
-#: inc/register.php:35
+#: inc/register.php:34
 msgid "Edit tag"
 msgstr "Redigera etikett"
 
-#: inc/register.php:36
+#: inc/register.php:35
 msgid "View tag"
 msgstr "Visa etikett"
 
-#: inc/register.php:37
+#: inc/register.php:36
 msgid "Update tag"
 msgstr "Uppdatera etikett"
 
-#: inc/register.php:38
+#: inc/register.php:37
 msgid "Add new tag"
 msgstr "Lägg till ny etikett"
 
-#: inc/register.php:39
+#: inc/register.php:38
 msgid "New tag name"
 msgstr "Nytt etikettnamn"
 
-#: inc/register.php:40
+#: inc/register.php:39
 msgid "Separate art type tags with commas"
 msgstr "Separata konsttyps-etiketter med kommatecken"
 
-#: inc/register.php:41
+#: inc/register.php:40
 msgid "Search tags"
 msgstr "Sök etiketter"
 
-#: inc/register.php:42
+#: inc/register.php:41
 msgid "Add or remove tags"
 msgstr "Lägg till eller ta bort etiketter"
 
-#: inc/register.php:43
+#: inc/register.php:42
 msgid "Choose from the most used tags"
 msgstr "Välj bland de vanligaste etiketterna"
 
-#: inc/register.php:44
+#: inc/register.php:43
 msgid "No tags found."
 msgstr "Inga etiketter hittades."
 
-#: inc/register.php:45
+#: inc/register.php:44
 msgid "Popular tags"
 msgstr "Populära etiketter"
 
-#: inc/register.php:46
+#: inc/register.php:45
 msgid "Parent tag"
 msgstr "Överordnad etikett"
 
-#: inc/register.php:47
+#: inc/register.php:46
 msgid "Parent tag:"
 msgstr "Överordnad etikett:"
 
-#: inc/register.php:48
+#: inc/register.php:47
 msgid "&larr; Back to tags"
 msgstr "← Tillbaka till etiketter"
 
-#: inc/register.php:49
+#: inc/register.php:48
 msgid "The name is how it appears in the user interface."
 msgstr "Namnet är hur det visas i användargränssnittet."
 
-#: inc/register.php:50
+#: inc/register.php:49
 msgid ""
 "The &#8220;slug&#8221; is a sanitized version of the name. It is usually all "
 "lowercase and contains only letters, numbers, and hyphens. Do not change if "
@@ -109,13 +109,37 @@ msgstr ""
 "gemener och innehåller bara bokstäver, siffror och bindestreck. Ändra inte "
 "om det inte behövs."
 
-#: inc/register.php:51
+#: inc/register.php:50
 msgid "The description is not used."
 msgstr "Beskrivningen används inte."
 
-#: inc/register.php:73
+#: inc/register.php:72
 msgid "Metadata tag for sorting and grouping posts."
 msgstr "Metadatatagg för sortering och gruppering av inlägg."
+
+#: inc/sorting.php:22 inc/sorting.php:61
+msgid "Numeric sorting value"
+msgstr "Numeriskt sorteringsvärde"
+
+#: inc/sorting.php:24
+msgid ""
+"Add a sorting number to the tags. On the front page, the tags are sorted "
+"from lowest number to highest."
+msgstr ""
+"Lägg till ett sorteringsnummer till etiketterna. På förstasidan sorteras "
+"etiketterna från lägsta värde till högsta."
+
+#: inc/sorting.php:64
+msgid ""
+"Add a sorting number to the tag. On the front page, the tags are sorted from "
+"lowest number to highest."
+msgstr ""
+"Lägg till ett sorteringsnummer till etiketten. På förstasidan sorteras "
+"etiketterna från lägsta värde till högsta."
+
+#: inc/sorting.php:109
+msgid "Sorting value"
+msgstr "Sorteringsvärde"
 
 #. Plugin Name of the plugin/theme
 msgid "Kebbet plugins - custom taxonomy: arttype"

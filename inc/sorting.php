@@ -40,14 +40,14 @@ add_action( TAXONOMY . '_add_form_fields', __NAMESPACE__ . '\display_add_field',
  */
 function save_field( $term_id ) {
 	// Check what we have posted, but verify nonce first.
-	if ( ! isset( $_REQUEST[ TAXONOMY . '_sorting_nonce'] ) ) {
+	if ( ! isset( $_REQUEST[ TAXONOMY . '_sorting_nonce' ] ) ) {
 		return;
 	}
-	if ( ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_REQUEST[ TAXONOMY . '_sorting_nonce'] ) ), TAXONOMY . '_sorting_nonce_verify' ) ) {
+	if ( ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_REQUEST[ TAXONOMY . '_sorting_nonce' ] ) ), TAXONOMY . '_sorting_nonce_verify' ) ) {
 		return;
 	}
-	if ( isset( $_POST[META_SLUG] ) && '' !== $_POST[META_SLUG] ) {
-		$value = sanitize_text_field( wp_unslash( $_POST[META_SLUG] ) );
+	if ( isset( $_POST[ META_SLUG ] ) && '' !== $_POST[ META_SLUG ] ) {
+		$value = sanitize_text_field( wp_unslash( $_POST[ META_SLUG ] ) );
 		add_term_meta( $term_id, META_SLUG, $value, true );
 	}
 }
@@ -86,15 +86,15 @@ add_action( TAXONOMY . '_edit_form_fields', __NAMESPACE__ . '\display_edit_field
 function update_field( $term_id ) {
 
 	// Check what we have posted, but verify nonce first.
-	if ( ! isset( $_REQUEST[ TAXONOMY . '_sorting_nonce'] ) ) {
+	if ( ! isset( $_REQUEST[ TAXONOMY . '_sorting_nonce' ] ) ) {
 		return;
 	}
-	if ( ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_REQUEST[ TAXONOMY . '_sorting_nonce'] ) ), TAXONOMY . '_sorting_nonce_verify' ) ) {
+	if ( ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_REQUEST[ TAXONOMY . '_sorting_nonce' ] ) ), TAXONOMY . '_sorting_nonce_verify' ) ) {
 		return;
 	}
 
-	if ( isset( $_POST[META_SLUG] ) && '' !== $_POST[META_SLUG] ) {
-		$value = sanitize_text_field( wp_unslash( $_POST[META_SLUG] ) );
+	if ( isset( $_POST[ META_SLUG ] ) && '' !== $_POST[ META_SLUG ] ) {
+		$value = sanitize_text_field( wp_unslash( $_POST[ META_SLUG ] ) );
 		update_term_meta( $term_id, META_SLUG, $value );
 	}
 }

@@ -19,7 +19,7 @@ use const kebbet\taxonomy\arttype\HIDE_DESC;
  * @return string|null Print style tag or return nothing.
  */
 function hide_form_fields() {
-	$style  = '';
+	$style = '';
 
 	if ( ! is_admin() ) {
 		return;

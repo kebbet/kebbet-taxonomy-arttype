@@ -17,7 +17,7 @@
 namespace kebbet\taxonomy\arttype;
 
 const TAXONOMY   = 'arttype';
-const POST_TYPES = array( 'art', 'project' );
+const POST_TYPES = array( 'art', 'project', 'work' );
 const HIDE_SLUG  = false;
 const HIDE_DESC  = true;
 

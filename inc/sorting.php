@@ -58,7 +58,7 @@ add_action( 'created_' . TAXONOMY, __NAMESPACE__ . '\save_field', 10, 1 );
  *
  * @since 1.2.0
  *
- * @param object $term The term id.
+ * @param WP_term $term The term object.
  */
 function display_edit_field( $term ) {
 	$value = get_term_meta( $term->term_id, META_SLUG, true );
